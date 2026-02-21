@@ -1,0 +1,383 @@
+@font-face {
+  font-family: 'hello';
+  src: url('./assets/f.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: hello;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.nav{
+    height:60px;
+    width:100%;
+    background:transparent;
+    display:flex;
+    align-items: center;
+    padding:0px 20px;
+    padding-right:50px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+ 
+}
+.nav img{
+    height:60px;
+    filter:invert(1);
+}
+.nav .items {
+    width:100%;
+    display: flex;
+    align-items: center;
+    gap:60px;
+    padding-left:40px;
+    color:#d8d8e1;
+}
+
+.nav .launch{
+    width:30%;
+    display:flex;
+    font-size:0.89rem;
+    font-weight: 300;
+    border:1px solid white;
+    padding:5px 20px;
+    color:#d8d8e1;
+    gap:40px;
+}
+.nav .launch .time{
+    display:flex;
+    gap:10px;
+}
+.hero{
+    height:100vh;
+    width:100%;
+    background: transparent;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    padding:0px 120px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero h1{
+    margin-top:0;
+    text-transform: uppercase;
+    font-size:3.7rem;
+    max-width:620px;
+    line-height:1;
+}
+.hero p{
+    color:#d8d8e1;
+    max-width:720px;
+    margin-top:14px;
+    font-size:1rem;
+}
+
+.hero .btn button{
+    padding:15px 20px;
+    margin-top:30px;
+    background: transparent;
+    border:1px solid #d8d8e1;
+    color:white;
+    cursor:pointer;
+    letter-spacing: 1px;
+}
+
+.hero .btn button:hover{
+    color:black;
+    background-color: white;
+    transition: all ease 0.7s;
+}
+
+.bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.hero h1, p,.btn {
+    position: relative;
+    z-index: 2;
+}
+.page2{
+    height: 100%;
+    width:100%;
+    background-image:   radial-gradient(
+    circle at top right,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.5) 30%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 70%
+  ), url('./assets/image2.png');
+    background-position: center;
+    background-size: cover;
+    z-index:2;
+    position:relative;
+}
+
+.page2 .contain{
+    display:flex;
+    height:50%;
+    width:50%;
+    flex-direction: column;
+    position:absolute;
+    top:7%;
+    left:50%;
+    gap:40px;
+   
+}
+
+.page2 .contain h1{
+    font-size: 3.5rem;
+    color:#d8d8e1;
+}
+.page2 .contain p{
+    width:90%;
+    color: #d8d8e1;
+}
+
+.page2 .contain .btn button{
+    background: rgba(15, 15, 15, 0.625);
+    backdrop-filter: blur(2px);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.3);
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.page2 .contain .btn button:hover{
+    background-color: white;
+    color:black;
+    transition: all ease 0.7s;
+}
+
+.page3{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+.page3 .bg-video{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.page3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(0,0,0,0.8) 0%,
+    rgba(0,0,0,0.6) 40%,
+    rgba(0,0,0,0.3) 65%,
+    rgba(0,0,0,0) 85%
+  );
+  z-index: 1;
+}
+.page3 .container2{
+    position:relative;
+    height:50%;
+    width:50%;
+    padding:20px 20px;
+    margin:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+
+.page3 h1,p,.btn{
+    position:relative;
+    z-index:2;
+}
+.page3 .container2 h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color:#d8d8e1;
+}
+.page3 .container2 p{
+    font-size: 1rem;
+    color:#d8d8e1;
+    font-weight: 100;
+}
+
+.page3 .container2 .btn button{
+    padding:18px 20px;
+    border-radius:5px;
+    border:0.5px solid #d8d8e1;
+    background: rgba(15, 15, 15, 0.625);
+    backdrop-filter: blur(2px);
+    color: white;
+    cursor:pointer;
+    letter-spacing:1px;
+}
+
+.page3 .container2 .btn button:hover{
+    background-color: white;
+    color:black;
+    transition: all ease 0.4s;
+}
+
+
+.page4{
+    height:100%;
+    width:100%;
+    background-image:radial-gradient(
+    circle at top right,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.5) 30%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 70%
+  ), url('./assets/image3.png');
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: flex-end;
+   
+}
+.page4 .container3{
+    height:50%;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    gap:30px;
+}
+
+.page4 .container3 h1{
+    font-size:3rem;
+    max-width:70%;
+    text-transform: uppercase;
+    color:#d8d8e1;
+}
+.page4 .container3 p{
+    font-size:1rem;
+    max-width:90%;
+    font-weight: lighter;
+    color:#d8d8e1;
+}
+
+.page4 .container3 .btn button{
+    padding:15px 30px;
+    background: transparent;
+    color:white;
+    border:0.5px solid #d8d8e1;
+    border-radius:5px;
+    cursor:pointer;
+    letter-spacing: 1px;
+}
+
+.page4 .container3 .btn button:hover{
+    background-color: white;
+    color:black;
+    transition: all ease 0.4s;
+}
+
+.page5{
+    height:100%;
+    width:100%;
+    position:relative;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+}
+
+.page5 .bg-video{
+    position:absolute;
+    inset:0;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    z-index:0;
+   
+}
+
+
+.page5 .container4{
+    height:50%;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    gap:30px;
+    position:relative;
+    margin-left:100px;
+}
+
+.page5 .container4 h1{
+    font-size:3rem;
+    max-width:70%;
+    text-transform: uppercase;
+    color:#d8d8e1;
+}
+.page5 .container4 p{
+    font-size:1rem;
+    max-width:90%;
+    font-weight: lighter;
+    color:#d8d8e1;
+}
+
+.page5 .container4 .btn button{
+    padding:15px 30px;
+    background: rgba(15, 15, 15, 0.625);
+    color:white;
+    border:0.5px solid #d8d8e1;
+    border-radius:5px;
+    cursor:pointer;
+    letter-spacing: 1px;
+}
+
+.page5 .container4 .btn button:hover{
+    background-color: white;
+    color:black;
+    transition: all ease 0.4s;
+}
+
+.page5 .items{
+    display:flex;
+    position:relative;
+    color:#d8d8e1;
+    height:20px;
+    width:100%;
+    gap:20px;
+    justify-content: space-around;
+    align-items: center;
+    top:18%;
+}
+
+.page5 .circle{
+    height:50px;
+    width:50px;
+    background-color: #d8d8e1;
+    border-radius: 50%;
+}
+.page5 .circle img{
+    height:50px;
+    width:50px;
+}
+
+.page5 .list{
+    display:flex;
+    width:50%;
+    gap:40px;
+    justify-content: center;
+}

@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'hello';
+  src: url('./assets/f.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: hello;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.page1{
+    height:100%;
+    width:100%;
+    background-image:radial-gradient(
+    circle at top right,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.5) 30%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 70%
+  ), url("./assets/mars2.png");
+    background-position: center;
+    background-size: cover;
+   
+}
+.nav{
+    height:60px;
+    width:100%;
+    background:transparent;
+    display:flex;
+    align-items: center;
+    padding:20px 20px;
+    padding-right:50px;
+ 
+}
+.nav img{
+    height:60px;
+    filter:invert(1);
+}
+.nav .items {
+    width:100%;
+    display: flex;
+    align-items: center;
+    gap:60px;
+    padding-left:40px;
+    color:#d8d8e1;
+}
+
+.nav .launch{
+    width:30%;
+    display:flex;
+    font-size:0.89rem;
+    font-weight: 300;
+    border:1px solid white;
+    padding:5px 20px;
+    color:#d8d8e1;
+    gap:40px;
+}
+.nav .launch .time{
+    display:flex;
+    gap:10px;
+}
+
+.page1 .container{
+    height:calc(100% - 60px);
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1 .container h1{
+    font-size:6rem;
+    text-transform: uppercase;
+    animation:slide 1s ease-out forwards;
+}
+.page1 .container p{
+    font-weight: 100;
+    animation:slide 1s ease-out forwards;
+
+}
+
+@keyframes slide{
+    from{
+        transform:translateY(100px);
+        opacity:0;
+    }
+    to{
+        transform: rotateY(0px);
+        opacity:1;
+    }
+}
+
+.page2{
+    height:100%;
+    width:100%;
+    background-image: url("./assets/rocket.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position:relative;
+}
+.page2 .container2{
+    height:50%;
+    width:50%;
+    color:white;
+    padding:20px 20px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+   position:absolute;
+   top:10%;
+   left:50%;
+}
+
+.page2 .container2 h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.page2 .container2 p{
+    font-size: 1rem;
+    max-width: 70%;
+    line-height:1.5;
+}
+
+.page3{
+    height:100%;
+    width:100%;
+    background-image: url("./assets/mars3.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position:relative;
+}
+
+.page3 .container2{
+    height:50%;
+    width:50%;
+    color:white;
+    padding:20px 20px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+   position:absolute;
+   top:10%;
+   left:50%;
+}
+
+.page3 .container2 h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.page3 .container2 p{
+    font-size: 1rem;
+    max-width: 70%;
+    line-height:1.5;
+}
