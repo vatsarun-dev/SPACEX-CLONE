@@ -35,7 +35,7 @@ html, body {
     align-items: center;
     padding:20px 20px;
     padding-right:50px;
- 
+    position:fixed;
 }
 .nav img{
     height:60px;
