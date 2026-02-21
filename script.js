@@ -19,6 +19,6 @@ btn.addEventListener("click",()=>{
     window.location.href="nextPage.html"
 })
 
-// setInterval(
-//     updateTime,1000
-// )
+setInterval(
+    updateTime,1000
+)
